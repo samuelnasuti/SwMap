@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Brand:</b>
+  <%= @location.brand %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @location.address %>
+</p>
+
+<p>
+  <b>Sales:</b>
+  <%= @location.sales %>
+</p>
+
+<p>
+  <b>Salesnumber:</b>
+  <%= @location.salesnumber %>
+</p>
+
+<p>
+  <b>Latitude:</b>
+  <%= @location.latitude %>
+</p>
+
+<p>
+  <b>Longitude:</b>
+  <%= @location.longitude %>
+</p>
+
+<tl>
+<% for location in @location.nearbys(10) %>
+  <li><%= link_to location.brand, location %> (<%= location.sales %>) (<%= location.distance.round(2) %> miles)</li>
+<% end %>
+</tl>
+
+<% edit_location_path(@location) %> |
+<%= link_to 'Back', locations_path %>
