@@ -39,6 +39,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.2)
+    commonjs (0.2.6)
     daemons (1.1.9)
     devise (2.2.4)
       bcrypt-ruby (~> 3.0)
@@ -69,6 +70,11 @@ GEM
     json (1.7.7)
     launchy (2.3.0)
       addressable (~> 2.3)
+    less (2.3.1)
+      commonjs (~> 0.2.6)
+    less-rails (2.3.2)
+      actionpack (>= 3.1)
+      less (~> 2.3.1)
     libv8 (3.11.8.17)
     mail (2.4.4)
       i18n (>= 0.4.0)
@@ -153,6 +159,7 @@ DEPENDENCIES
   gmaps4rails
   heroku
   jquery-rails
+  less-rails
   pg
   rails (= 3.2.12)
   sass-rails (~> 3.2.3)

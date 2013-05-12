@@ -27,7 +27,7 @@ group :assets do
   gem 'twitter-bootstrap-rails'
 end
 
-
+gem 'less-rails'
 gem 'geocoder'
 gem 'devise'
 gem 'gmaps4rails'
